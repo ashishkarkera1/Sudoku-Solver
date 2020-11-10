@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">  
+  <!-- end  -->
+
+
+
+    
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            
+          }
+          
+          li {
+            float: left;
+          }
+          
+          li a {
+            display: block;
+            color: rgb(49, 49, 49);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          li a:hover {
+            background-color: rgb(219, 219, 219);
+            font-family: 'Montserrat', sans-serif;
+            font-size:15px ;
+            font-weight: 900;
+          } 
+          .active{
+            background-color: rgb(219, 219, 219);
+          }
+          body {
+            background-image: linear-gradient(to bottom right,rgb(238, 113, 238), pink);
+            background-color: #cccccc;
+           }
+          .navitext{
+            font-family: 'Montserrat', sans-serif;
+            font-size:15px ;
+            font-weight: 900;
+          }
+          .footertext{
+            font-family: 'Montserrat', sans-serif;
+            font-size:15px ;
+          }
+          .footer {
+            position: relative;
+            left: 0;
+            bottom: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            background-color: rgb(136, 130, 130);
+            color: rgb(255, 255, 255);
+            text-align: center;
+          }
+          .class{
+            min-height: 100vh;
+          }
+    </style>
+</head>
+<body class="sumne">
+  <nav class='navbar navbar-expand-md navbar-light bg-light sticky-top'>
+		<div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto ">
+        <li class="nav-link navitext"><a {%block sudoku_solver%}{%endblock%} href="/" >Sudoku Solver</a></li>
+        <li class="nav-link navitext"><a {%block algorithm%}{%endblock%}  href="/app/algorithm" >Underlying Algorithm</a></li>
+        <li class="nav-link navitext"><a {%block about%}{%endblock%} href="/app/about" >About</a></li>
+      </ul>
+  
+    </div>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+</body>
+<!-- <footer class="footer" style="margin-top:70px;" width="100%">
+  <p class="text-center footertext">&#169 Ashish Karkera</p>
+</footer> -->
+
+<!-- <footer class="container mt-4 footer" style="margin-top:70px;">
+  <div class="row">
+    <div class="col">
+      <p class="text-center footertext">&#169 Ashish Karkera</p>
+    </div>
+  </div>
+</footer> -->
+
+<footer class="footer" style="margin-top:20px ;">
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class="col-12">
+				<h5>&copy; ashishkarkera</h5>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</html>
