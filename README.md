@@ -14,10 +14,11 @@ Project Requirements:
 * Django (latest)
 
 Steps to run the project:
-* pip install requirement.txt (Install all dependencies)
+* pip install requirements.txt (Install all dependencies)
 * python manage.py runserver
 
 Possible Errors:
 * For PostgresSQL db set in settings.py for Heroku
+
  Sol- Change the "DATABASES" value to defualt django value in settings.py
 
