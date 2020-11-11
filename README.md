@@ -18,7 +18,7 @@ Steps to run the project:
 * python manage.py runserver
 
 Possible Errors:
-* For PostgresSQL db set in settings.py for Heroku
+* For PostgreSQL db set in settings.py for Heroku
 
  Sol- Change the "DATABASES" value to defualt django value in settings.py
 
