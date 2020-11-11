@@ -8,6 +8,9 @@ This step is recursively called for every empty square. If an empty square has n
 this means that previously filled values were incorrect. Now the Algorithm Backtracks to the previous empty
 position and tries to update it to next possible number (1-9).
 
+Correctness:
+* Can Solve any high level sudoku(Expert+ (9*9))
+
 
 Project Requirements:
 * Python- 3.6.2
